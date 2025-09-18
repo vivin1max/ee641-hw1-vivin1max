@@ -28,7 +28,6 @@ def ablation_study(dataset_params, model_class, device, save_path):
         train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
         val_loader = DataLoader(val_dataset, batch_size=32)
         model = model_class().to(device)
-        # Use new training function
         train_losses, val_losses = train_heatmap_model(model, train_loader, val_loader, num_epochs=10)
         # Evaluate
         test_loader = DataLoader(val_dataset, batch_size=32)
