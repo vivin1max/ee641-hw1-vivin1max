@@ -1,2 +1,2 @@
-Vivin Thiyagarajan
+Vivin Thiyagarajan \
 vthiyaga@usc.edu
